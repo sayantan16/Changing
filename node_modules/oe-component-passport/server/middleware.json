@@ -1,0 +1,23 @@
+{
+    "initial:before": {
+
+    },
+    "initial": {
+    },
+    "session": {},
+    "auth": {
+      "./middleware/fininfra-jwt-verify": {
+        "paths": [
+          "${restApiRoot}"
+        ]
+      }
+    },
+    "parse": {
+    },
+    "routes:before": {},
+    "routes:after": {},
+    "files": {
+    },
+    "final": {},
+    "final:after": {}
+}

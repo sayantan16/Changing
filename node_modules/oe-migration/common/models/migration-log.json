@@ -1,0 +1,21 @@
+{
+    "name": "MigrationLog",
+    "base": "BaseEntity",
+    "idinjection": true,
+    "description": "This model stores logs of data migration",
+    "options": {
+        "isFrameworkModel": true
+    },
+    "properties": {
+        "logType": "string",
+        "model": "string",
+        "dbVersion": "string",
+        "tenant": "string",
+        "filePath": "string",
+        "migrationDate": "date",
+        "log": "object"
+    },
+    "validations": [],
+    "relations": {},
+    "methods": {}
+}

@@ -1,0 +1,16 @@
+{
+    "name": "SystemConfig",
+    "base": "BaseEntity",
+    "idinjection": true,
+    "description": "This model stores System Config details such as DB Version",
+    "options": {
+        "isFrameworkModel": true
+    },
+    "properties": {
+        "key": "string",
+        "value": "string"
+    },
+    "validations": [],
+    "relations": {},
+    "methods": {}
+}

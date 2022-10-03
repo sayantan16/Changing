@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "sources": [
+      "../common/models"
+    ],
+    "mixins": [
+      "../common/mixins"
+    ]
+  },
+  "ModelView": {
+    "dataSource": "db",
+    "public": true
+  },
+  "DesignerElement": {
+    "dataSource": "db",
+    "public": true
+  } 
+}

@@ -1,0 +1,40 @@
+{
+    "name": "DecisionTree",
+    "base": "BaseEntity",
+    "description": "This model is used for storing decision tree",
+    "options": {
+      "validateUpsert": true,
+      "isFrameworkModel": true
+    },
+    "properties": {
+      "name": {
+        "type": "string",
+        "required": true,
+        "unique": true,
+        "id": true
+      },
+      "nodes": {
+        "type": ["object"],
+        "description": "Decision Tree Nodes",
+        "required" : false
+      },
+      "connections": {
+        "type": ["object"],
+        "description": "Decision Tree Connections",
+        "required" : false
+      },
+      "rootNodeId": {
+        "type": "string",
+        "description": "Root Node id of decision tree"
+      }
+    },
+    "oeValidations": [],
+    "validations": [],
+    "acls": [],
+    "methods": {},
+    "hidden": ["rootNodeId"],
+    "mixins" : {
+      "VersionMixin" : false
+    }
+   
+}

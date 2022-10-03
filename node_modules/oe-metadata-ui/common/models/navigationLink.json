@@ -1,0 +1,72 @@
+{
+  "name": "NavigationLink",
+  "base": "BaseEntity",
+  "idInjection": false,
+  "description": "Configuration for navigation-links in UI",
+  "options": {
+    "validateUpsert": true
+  },
+  "VersionMixin": true,
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "max": 80,
+      "unique": {
+        "scopedTo": [
+          "group"
+        ]
+      },
+      "description":"link name"
+    },
+    "url": {
+      "type": "string",
+      "max": 250,
+      "description":"url to navigation"
+    },
+    "label": {
+      "type": "string",
+      "required": true,
+      "max": 80,
+      "description":"display label for navigation link. This can also be 'Literal' key."
+    },
+    "icon": {
+      "type": "string",
+      "required": false,
+      "max": 50,
+      "description":"If specified, an icon is displayed next to label"
+    },
+    "parent": {
+      "type": "string",
+      "max": 80,
+      "description":"Name of the parent link. UI components can use this hierarchical data to navigate progressively or display a tree structure of navigation link."
+    },
+    "group": {
+      "type": "string",
+      "max": 50,
+      "description":"The link group"
+    },
+    "topLevel": {
+      "type": "boolean",
+      "default": true,
+      "description":"Flag indicating if this link is a top level link or child of another link"
+    },
+    "sequence": {
+      "type": "number",
+      "numericality": "integer",
+      "default": 9999,
+      "description":"Link order"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "children": {
+      "type": "hasMany",
+      "model": "NavigationLink",
+      "foreignKey": "parent",
+      "primaryKey": "name"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,46 @@
+{
+  "name": "DecisionTable",
+  "base": "BaseEntity",
+  "description": "This model is used for representing a simple Decision Table",
+  "options": {
+    "validateUpsert": true,
+    "isFrameworkModel": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "index" : true
+    },
+    "decisionRules": {
+      "type": "string",
+      "oracle":{
+          "dataType":"CLOB"
+        }
+    },
+    "documentData" : {
+      "type" : "string",
+      "description" : "base64 encoded string of the excel file",
+      "oracle":{
+          "dataType":"CLOB"
+        }
+    },
+    "documentName" : {
+      "type" : "string",
+      "description" : "Name of the file uploaded"
+    },
+    "dtDesignerData":{
+      "type":"object",
+      "description":"Decision Table JSON used by the rule-designer"
+    }
+  },
+  "oeValidations": [],
+  "validations": [],  
+  "acls": [],
+  "methods": {},
+  "hidden": ["documentData", "documentName"],
+  "mixins" : {
+    "VersionMixin" : true
+  }
+}

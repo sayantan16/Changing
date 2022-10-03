@@ -1,0 +1,41 @@
+{
+  "name": "oe-cloud-2.x",
+  "version": "1.0.0",
+  "description": "Oe cloud 2x application",
+  "author": "sumeet",
+  "engines": {
+    "node": ">=6"
+  },
+  "main": "server/server.js",
+  "scripts": {
+    "lint": "eslint .",
+    "fix-lint": "eslint --fix ."
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "lodash": "^4.17.15",
+    "loopback-component-explorer": "^6.5.0",
+    "oe-cloud": "^2.0.0",
+    "oe-connector-mongodb": "^2.0.0",
+    "oe-logger": "^2.0.0",
+    "oe-multi-tenancy": "^2.3.0",
+    "oe-component-passport": "^2.3.0",
+    "oe-common-mixins": "^2.3.0",
+    "oe-model-composite": "^2.3.0",
+    "oe-personalization": "^2.3.0",
+    "oe-expression": "^2.2.0",
+    "oe-business-rule": "^2.3.0",
+    "oe-validation": "^2.3.0",
+    "oe-node-red": "^2.3.0",
+    "oe-job-scheduler": "^2.2.0",
+    "oe-metadata-ui": "^2.3.0",
+    "oe-migration": "^2.3.0",
+    "oe-studio-service": "^2.3.0",
+    "oe-batch-processing": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.10.0"
+  },
+  "license": "MIT"
+}

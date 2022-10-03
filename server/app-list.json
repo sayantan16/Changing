@@ -1,0 +1,80 @@
+[
+  {
+    "path": "oe-cloud",
+    "enabled": true
+  },
+  {
+    "path": "oe-multi-tenancy",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "oe-component-passport",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "oe-common-mixins",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "oe-model-composite",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "oe-personalization",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "oe-expression",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "oe-business-rule",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "oe-validation",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "oe-node-red",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "oe-job-scheduler",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "oe-metadata-ui",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "oe-migration",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "oe-studio-service",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "oe-batch-processing",
+    "autoEnableMixins": true,
+    "enabled": true
+  },
+  {
+    "path": "./",
+    "enabled": true
+  }
+]

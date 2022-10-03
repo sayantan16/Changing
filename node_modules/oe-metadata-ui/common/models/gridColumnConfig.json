@@ -1,0 +1,78 @@
+{
+  "name": "GridColumnConfig",
+  "base": "Model",
+  "idInjection": false,
+  "description": "Column metadata that is used in GridConfig",
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "key": {
+      "id": true,
+      "type": "string",
+      "required": true,
+      "max": 30,
+      "description": "The column field identifier"
+    },
+    "label": {
+      "type": "string",
+      "description": "The string to be shown in column header."
+    },
+    "type": {
+      "type": "string",
+      "description": "The type of the content that is shown in the column. For example date, timestamp, number, string."
+    },
+    "uiType": {
+      "type": "string",
+      "description": "The input control that has to be used for inline editing."
+    },
+    "width": {
+      "type": "number",
+      "description": "Width of the column in `px`."
+    },
+    "minWidth": {
+      "type": "number",
+      "description": "Min Width of the column in `px`, by default grid level min width will be taken."
+    },
+    "sort": {
+      "type": "string",
+      "description": "Sort order of the current column. Takes either `asc` or `desc`."
+    },
+    "firstToSort": {
+      "type": "string",
+      "description": "Whether to sort first by desc or asc, by default it is asc."
+    },
+    "formatter": {
+      "type": "string",
+      "description": "A custom formatting function which returns the value to show in the cell."
+    },
+    "renderer": {
+      "type": "string",
+      "description": "A custom rendering function which returns the element to show in the cell."
+    },
+    "href": {
+      "type": "string",
+      "description": "Takes an express styled path and shows the cell content as a `hyperlink` with the provided path. For example, /models/customer/:id"
+    },
+    "cellClass": {
+      "type": "string",
+      "description": "Class to apply on data table cell"
+    },
+    "cellClassRules": {
+      "type": "string",
+      "description": "Object having class name to be applied as key and an expression to evaluate as value"
+    },
+    "valueGetter": {
+      "type": "string",
+      "description": "A custom getter function which returns a value for the property specified in the `key`."
+    },
+    "hidden": {
+      "type": "boolean",
+      "description": "Column will be hidden if it is set to true."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

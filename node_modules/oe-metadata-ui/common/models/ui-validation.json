@@ -1,0 +1,32 @@
+{
+  "name": "UIValidation",
+  "base": "BaseEntity",
+  "idInjection": false,
+  "description": "This Model is used to store UI Level Validations",
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "max": 100,
+      "description": "the Validation type"
+    },
+    "fields": {
+      "type": [ "string" ],
+      "required": false,
+      "description": "Fields on which this validation needs to be applied"
+    },
+    "error": {
+      "type": "string",
+      "required": false,
+      "max": 100,
+      "description": "Error code to emit when validation fails"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

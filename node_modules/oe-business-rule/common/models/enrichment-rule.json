@@ -1,0 +1,24 @@
+{
+  "name": "EnrichmentRule",
+  "properties": {
+    "modelName": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "rules": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "isService": {
+      "type": "boolean",
+      "default": false
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "initial:before": {},
+  "initial": {},
+  "session:before": {},    
+  "session": {},
+  "session:after": {},
+  "auth": {},
+  "auth:after": {
+    "./middleware/populate-autoscope-callcontext": {}
+  },
+  "parse": {},
+  "routes:before": {},
+  "routes": {},
+  "routes:after" :{},
+  "files": {},
+  "final": {},
+  "final:after": {}
+}
+

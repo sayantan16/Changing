@@ -1,0 +1,55 @@
+{
+  "name": "DecisionGraph",
+  "base": "BaseEntity",
+  "description": "This model is used for storing decision graphs",
+  "options": {
+    "validateUpsert": true,
+    "isFrameworkModel": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "id": true
+    },
+    "data": {
+      "type": "object",
+      "description": "The json feel data"
+    },
+    "decisions": {
+      "type": ["string"],
+      "description": "The decisions to execute",
+      "required" : false
+    },
+    "graph": {
+      "type": "object",
+      "description": "The graph",
+      "required" : false
+    },
+    "payload": {
+      "type": "string",
+      "description": "The payload to execute the decisions on",
+      "required" : false
+    },
+    "documentName": {
+      "type": "string",
+      "description": "Name of the excel file containing the decision graph"
+    },
+    "documentData" : {
+      "type":"string",
+      "description" : "base64 encoded data of the excel file containing the decision graph",
+      "oracle":{
+          "dataType":"CLOB"
+        }
+    }
+  },
+  "oeValidations": [],
+  "validations": [],
+  "acls": [],
+  "methods": {},
+  "hidden":["documentName", "documentData"],
+  "mixins" : {
+    "VersionMixin" : false
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_meta": {
+    "sources": [
+      "../common/models"
+    ],
+    "mixins": [
+      "../common/mixins"
+    ]
+  },
+  "ModelValidationRule": {
+    "dataSource": "db",
+    "public" : true
+  }
+}

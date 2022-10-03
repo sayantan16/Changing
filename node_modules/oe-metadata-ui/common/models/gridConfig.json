@@ -1,0 +1,40 @@
+{
+  "name": "GridConfig",
+  "base": "BaseEntity",
+  "plural": "GridConfigs",
+  "idInjection": true,
+  "description": "This model stores Grid configuration used by oe-data-table",
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "code": {
+      "type": "string",
+      "max": 30,
+      "description": "The config identifier"
+    },
+    "label": {
+      "type": "string",
+      "max": 30,
+      "description": "The text to display as oe-data-table header"
+    },
+    "editorFormUrl": {
+      "type": "string",
+      "max": 500,
+      "description": "URL of the page to show when a row is added/edited."
+    }
+  },
+  "validations": [],
+  "relations": {
+    "columnConfigs": {
+      "type": "embedsMany",
+      "model": "GridColumnConfig",
+      "property": "columns",
+      "options": {
+        "validate": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
